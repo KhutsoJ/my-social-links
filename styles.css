@@ -1,8 +1,17 @@
 body {
-   background: rgb(27, 27, 27);
+   background: rgb(20, 20, 20);
    color: whitesmoke;
    font-family: 'Arial';
-   display: grid;
+   overflow: hidden;
+   
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   min-height: 100vh;
 }
 
 p {
@@ -10,21 +19,25 @@ p {
    padding: 0;
 }
 
-.center-grid {
-   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
+a {
+   text-decoration: none;
+   color: inherit;
+   outline: none;
 }
 
 .container {
    display: flex;
    flex-direction: column;
-   padding: 2rem 3rem;
-   background-color: rgb(37, 37, 37);;
-   border-radius: 5px;
-   width: 280px;
+   padding: 32px 64px;
+   /* margin: 16px; */
+   background-color: rgb(31, 31, 31);
+   border-radius: 10px;
+   width: 270px;
+   transition: 0.44s ease;
+}
+
+.container:hover {
+   transform: translateY(-5px)
 }
 
 .profile-picture-container {
@@ -35,7 +48,7 @@ p {
 
 .profile-picture {
    border-radius: 50%;
-   width: 100px;
+   width: 80px;
 }
 
 .info-container {
@@ -47,19 +60,21 @@ p {
 }
 
 .name {
-   font-size: 1.5rem;
+   font-size: 20px;
    margin-bottom: 0.5rem;
+   font-weight: 700;
 }
 
 .location {
-   font-size: 0.8rem;
-   font-weight: bold;
-   color: rgb(245, 242, 92);
+   font-size: 11px;
+   font-weight: 700;
+   color: rgb(197, 248, 42);
+   margin-bottom: 1.8rem;
 }
 
 .description {
-   font-size: 0.8rem;
-   margin-bottom: 1.5rem;
+   font-size: 12px;
+   margin-bottom: 1.2rem;
 }
 
 .socials-container {
@@ -72,14 +87,15 @@ p {
 
 .social {
    cursor: pointer;
-   background-color: rgb(61, 61, 61);
+   background-color: rgb(51, 51, 51);
    border-radius: 6px;
-   padding: 0.8rem 1.5rem;
-   font-weight: bold;  
-   font-size: 0.9rem;
+   /* padding: 0.8rem 1.5rem; */
+   padding: 10px;
+   font-weight: 600;
+   font-size: 14px;
 }
 
 .social:hover {
-   background-color: rgb(248, 248, 27);
+   background-color: rgb(197, 248, 42);
    color: black;
 }
